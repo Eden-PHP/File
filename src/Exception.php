@@ -10,15 +10,10 @@
 namespace Eden\File;
 
 /**
- * The base class for any class handling exceptions. Exceptions
- * allow an application to custom handle errors that would
- * normally let the system handle. This exception allows you to
- * specify error levels and error types. Also using this exception
- * outputs a trace (can be turned off) that shows where the problem
- * started to where the program stopped.
+ * Exception Class
  *
  * @vendor Eden
- * @package file
+ * @package File
  * @author Christian Blanquera cblanquera@openovate.com
  */
 class Exception extends \Eden\Path\Exception

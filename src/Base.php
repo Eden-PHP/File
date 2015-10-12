@@ -10,13 +10,10 @@
 namespace Eden\File;
 
 /**
- * The base class for all classes wishing to integrate with Eden.
- * Extending this class will allow your methods to seemlessly be
- * overloaded and overrided as well as provide some basic class
- * loading patterns.
+ * Base Class
  *
  * @vendor Eden
- * @package file
+ * @package File
  * @author Christian Blanquera cblanquera@openovate.com
  */
 class Base extends \Eden\Path\Index
