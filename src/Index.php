@@ -1,9 +1,9 @@
 <?php //-->
-/*
- * This file is part of the System package of the Eden PHP Library.
- * (c) 2013-2014 Openovate Labs
+/**
+ * This file is part of the Eden package.
+ * (c) 2014-2016 Openovate Labs
  *
- * Copyright and license information can be found at LICENSE
+ * Copyright and license information can be found at LICENSE.txt
  * distributed with this package.
  */
 
@@ -13,9 +13,10 @@ namespace Eden\File;
  * General available methods for common file
  * manipulations and information per file
  *
- * @vendor Eden
- * @package file
- * @author Christian Blanquera cblanquera@openovate.com
+ * @vendor   Eden
+ * @package  file
+ * @author   Christian Blanquera <cblanquera@openovate.com>
+ * @standard PSR-2
  */
 class Index extends Base
 {
@@ -183,6 +184,7 @@ class Index extends Base
      * Creates a file and puts specified content into that file
      *
      * @param *string content
+     *
      * @return this
      */
     public function setContent($content)
@@ -205,6 +207,7 @@ class Index extends Base
      * Creates a php file and puts specified variable into that file
      *
      * @param *mixed
+     *
      * @return this
      */
     public function setData($variable)
