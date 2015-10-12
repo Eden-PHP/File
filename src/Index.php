@@ -14,7 +14,7 @@ namespace Eden\File;
  * manipulations and information per file
  *
  * @vendor   Eden
- * @package  file
+ * @package  File
  * @author   Christian Blanquera <cblanquera@openovate.com>
  * @standard PSR-2
  */
@@ -82,7 +82,7 @@ class Index extends Base
     /**
      * Returns the base file name extension
      *
-     * @return string
+     * @return string|null
      */
     public function getExtension()
     {
@@ -183,9 +183,9 @@ class Index extends Base
     /**
      * Creates a file and puts specified content into that file
      *
-     * @param *string content
+     * @param *string $content  content
      *
-     * @return this
+     * @return Eden\File\Index
      */
     public function setContent($content)
     {
@@ -206,9 +206,9 @@ class Index extends Base
     /**
      * Creates a php file and puts specified variable into that file
      *
-     * @param *mixed
+     * @param *mixed $variable variable
      *
-     * @return this
+     * @return Eden\File\Index
      */
     public function setData($variable)
     {
@@ -218,7 +218,7 @@ class Index extends Base
     /**
      * Removes a file
      *
-     * @return this
+     * @return Eden\File\Index
      */
     public function remove()
     {
@@ -239,7 +239,7 @@ class Index extends Base
      * Touches a file (effectively creates the file if
      * it doesn't exist and updates the date if it does)
      *
-     * @return this
+     * @return Eden\File\Index
      */
     public function touch()
     {
