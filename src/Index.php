@@ -1,6 +1,6 @@
 <?php //-->
 /**
- * This file is part of the Eden package.
+ * This file is part of the Eden PHP Library.
  * (c) 2014-2016 Openovate Labs
  *
  * Copyright and license information can be found at LICENSE.txt
@@ -20,8 +20,14 @@ namespace Eden\File;
  */
 class Index extends Base
 {
+    /**
+     * @const string ERROR_PATH_IS_NOT_FILE Error template
+     */
     const ERROR_PATH_IS_NOT_FILE = 'Path %s is not a file in the system.';
 
+    /**
+     * @var string|null $path memory cache of instances saved
+     */
     protected $path = null;
 
     /**
@@ -183,7 +189,7 @@ class Index extends Base
     /**
      * Creates a file and puts specified content into that file
      *
-     * @param *string $content  content
+     * @param *string $content The raw content to save
      *
      * @return Eden\File\Index
      */
@@ -206,7 +212,7 @@ class Index extends Base
     /**
      * Creates a php file and puts specified variable into that file
      *
-     * @param *mixed $variable variable
+     * @param *mixed $variable Whatever data to save
      *
      * @return Eden\File\Index
      */
@@ -248,6 +254,9 @@ class Index extends Base
         return $this;
     }
 
+    /**
+     * @var array $mimeTypes list of mimetypes when php methods fail
+     */
     protected static $mimeTypes = array(
         'ai' => 'application/postscript',
         'aif' => 'audio/x-aiff',
